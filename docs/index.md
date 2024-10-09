@@ -160,7 +160,7 @@ This setup is supported in this package using a verification endpoint. Add the f
     ]
 ```
 
-Passing a token to the verification endpoint will return a 200 response and the token if it is valid. Otherwise, it will return a 400 Bad Request as well as an error identifying why the token was invalid.
+Passing a token to the verification endpoint will return a 201 response and the token if it is valid. Otherwise, it will return a 400 Bad Request as well as an error identifying why the token was invalid.
 
 ```bash
 $ curl -X POST -H "Content-Type: application/json" -d '{"token":"<EXISTING_TOKEN>"}' http://localhost:8000/api-token-verify/
